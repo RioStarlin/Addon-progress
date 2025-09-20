@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Addon Progress Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    th {
+      background: #333;
+      color: #ffcc00;
+    }
+    tr:nth-child(even) {
+      background: #1a1a1a;
+    }
+    .done { color: #00ff88; }
+    .progress { color: #ffaa00; }
+    .pending { color: #ff4444; }
+  </style>
+</head>
+<body>
+  <h1>🐾 Addon Progress Tracker</h1>
+  
+  <table>
+    <tr>
+      <th>Name/ID</th>
+      <th>Type</th>
+      <th>Behaviours</th>
+      <th>Model</th>
+      <th>Animations</th>
+      <th>Sounds</th>
+      <th>Logic</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>biologica:lion</td>
+      <td>Mob</td>
+      <td>Roars, hunts mobs, sleeps</td>
+      <td>✅</td>
+      <td>⏳</td>
+      <td>❌</td>
+      <td>⏳</td>
+      <td class="progress">In Progress</td>
+    </tr>
+    <tr>
+      <td>biologica:peacock</td>
+      <td>Mob</td>
+      <td>Feather display, dances</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td class="done">Done</td>
+    </tr>
+    <tr>
+      <td>biologica:dino_egg</td>
+      <td>Item</td>
+      <td>Placeable, hatches after time</td>
+      <td>✅</td>
+      <td>N/A</td>
+      <td>❌</td>
+      <td>⏳</td>
+      <td class="progress">In Progress</td>
+    </tr>
+  </table>
+</body>
+</html>
